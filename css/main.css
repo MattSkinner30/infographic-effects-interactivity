@@ -21,27 +21,56 @@ h2 {
   font-family: "Montserrat", sans-serif;
 }
 
-h1, p {
+h1, .white-p {
   font-family: "Montserrat", sans-serif;
   color: #fdd5bc;
 }
 
-.icon-size {
-  width: 7em;
-}
+
+
+
+
+
+
+
+/** THIS SECTION IS FOR THE BRAINS AT THE BOTTOM **/
 
 .enter-left {
+  position: absolute;
+  left: 60%;
   transition: all 200ms ease-in;
 }
 
 .enter-right {
+  position: absolute;
+  right: 60%;
   transition: all 200ms ease-in;
 }
 
 .translate-left-brain {
-  transform: translateX(100px);
+  transform: translateX(95%);
 }
 
 .translate-right-brain {
-  transform: translateX(-100px);
+  transform: translateX(-95%);
 }
+
+/** THIS SECTION IS FOR THE ICONS **/
+
+/**default state for icons**/
+.trait {
+  width: 7em;
+  color: #344b62;
+}
+
+.grow {
+  width: 13em;
+  transition: all 200ms ease-in;
+  color: #fdd5bc;
+
+}
+
+.test {
+  width: 200%;
+}
+
