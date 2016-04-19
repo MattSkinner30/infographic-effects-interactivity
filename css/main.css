@@ -1,0 +1,48 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  background-color: #344b62;
+}
+
+h2 {
+  color: #f26f5b;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1, p {
+  font-family: "Montserrat", sans-serif;
+  color: #fdd5bc;
+}
+
+.icon-size {
+  width: 7em;
+}
+
+.enter-l {
+  transition: all 200ms ease-in;
+}
+
+.enter-r {
+  transition: all 200ms ease-in;
+}
+
+.js-enter-r-animate {
+    translateX: -100px;
+
+}
+
+.js-enter-l-animate {
+  translateX: 100px;
+}
