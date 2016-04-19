@@ -30,19 +30,18 @@ h1, p {
   width: 7em;
 }
 
-.enter-l {
+.enter-left {
   transition: all 200ms ease-in;
 }
 
-.enter-r {
+.enter-right {
   transition: all 200ms ease-in;
 }
 
-.js-enter-r-animate {
-  translateX: -100px;
-
+.translate-left-brain {
+  transform: translateX(100px);
 }
 
-.js-enter-l-animate {
-  translateX: 100px;
+.translate-right-brain {
+  transform: translateX(-100px);
 }

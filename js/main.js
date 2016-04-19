@@ -1,19 +1,18 @@
-var $enterR = $('.enter-r');
+var $enterRight = $('.enter-right');
+var $enterLeft = $('.enter-left');
 
-var $enterL = $('.enter-l');
+$enterRight.waypoint(function (direction) {
+  if (direction == 'down') {
+  $enterRight.addClass('translate-right-brain');
+  } else {
+  $enterRight.removeClass('translate-right-brain');
+  }
+});
 
-$enterR.waypoint(function (direction) {
-	if (direction == 'down') {
-		$enterR.addClass('js-enter-r-animate');
-	} else {
-		$enterR.removeClass('js-enter-r-animate');
-	}
-}, {offset: '50%' });
-
-$enterL.waypoint(function (direction) {
-	if (direction == 'down') {
-		$enterL.addClass('js-enter-l-animate');
-	} else {
-		$enterL.removeClass('js-enter-l-animate');
-	}
-}, {offset: '50%' });
+$enterLeft.waypoint(function (direction) {
+  if (direction == 'down') {
+    $enterLeft.addClass('translate-left-brain');
+  } else {
+    $enterLeft.removeClass('translate-left-brain');
+  }
+}); 
