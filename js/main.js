@@ -14,7 +14,7 @@ $enterRight.waypoint(function (direction) {
   } else {
     $enterRight.removeClass('translate-right-brain');
   }
-}, {offset: '90%' });
+}, {offset: '90%'});
 
 $enterLeft.waypoint(function (direction) {
   if (direction == 'down') {
@@ -22,7 +22,7 @@ $enterLeft.waypoint(function (direction) {
   } else {
     $enterLeft.removeClass('translate-left-brain');
   }
-}, {offset: '90%' });
+}, {offset: '90%'});
 
 $trait.on('click', function () {
   $(this).toggleClass('grow');

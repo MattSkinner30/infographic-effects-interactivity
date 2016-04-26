@@ -26,7 +26,6 @@ h1, .white-p {
   color: #fdd5bc;
 }
 
-
 .chart-grow {
   transform: scale(2);
 }
@@ -63,7 +62,8 @@ h1, .white-p {
 
 /** THIS SECTION IS FOR THE ICONS **/
 
-/**default state for icons**/
+/** default state for icons **/
+
 .trait {
   width: 7em;
   color: #344b62;
