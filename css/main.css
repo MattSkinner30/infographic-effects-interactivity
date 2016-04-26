@@ -27,11 +27,17 @@ h1, .white-p {
 }
 
 
+.chart-grow {
+  transform: scale(2);
+}
 
+.move-p-down {
+  margin-top: 3em;
+}
 
-
-
-
+.push-chart {
+  padding-bottom: 1em;
+}
 
 /** THIS SECTION IS FOR THE BRAINS AT THE BOTTOM **/
 
