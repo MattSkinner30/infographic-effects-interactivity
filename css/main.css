@@ -55,26 +55,29 @@ h1, .white-p {
   padding-bottom: 1em;
 }
 
-/** THIS SECTION IS FOR THE BRAINS AT THE BOTTOM **/
-
-.enter-left {
-  position: absolute;
-  left: 60%;
+.vanish {
+  opacity: 0;
   transition: all 200ms ease-in;
 }
 
-.enter-right {
-  position: absolute;
-  right: 60%;
-  transition: all 200ms ease-in;
+.js-vanish-animate {
+  opacity: 1;
+  animation: vanish-scale 250ms linear;
 }
 
-.translate-left-brain {
-  transform: translateX(95%);
-}
+@keyframes vanish-scale {
 
-.translate-right-brain {
-  transform: translateX(-95%);
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 /** THIS SECTION IS FOR THE ICONS **/

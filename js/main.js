@@ -11,6 +11,7 @@ var $pChart2 = $('.p-chart2');
 var $chartDiv2 = $('.chart-div2');
 var $chart2 = $('.chart2');
 var $chartHeader2 = $('.chart-header2');
+var $vanish = $('.vanish');
 
 
 $trait.on('click', function () {
@@ -28,3 +29,11 @@ $chartDiv2.hover(function () {
   $chart2.toggleClass('chart-grow');
   $chartHeader2.toggleClass('push-chart');
 });
+
+$vanish.waypoint(function (direction) {
+    if (direction == 'down') {
+    $vanish.addClass('js-vanish-animate');
+  } else {
+    $vanish.removeClass('js-vanish-animate');
+  }
+}, {offset: '90%' });
