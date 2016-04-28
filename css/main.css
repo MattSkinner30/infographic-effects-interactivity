@@ -39,7 +39,7 @@ h1, .white-p {
   0% {
     transform: scale(1);
   }
-  
+
   50% {
     transform: scale(1.03);
   }

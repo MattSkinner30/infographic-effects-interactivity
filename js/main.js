@@ -30,9 +30,9 @@ $chartDiv2.hover(function () {
 });
 
 $vanish.waypoint(function (direction) {
-    if (direction == 'down') {
-  $vanish.addClass('js-vanish-animate');
+  if (direction == 'down') {
+    $vanish.addClass('js-vanish-animate');
   } else {
     $vanish.removeClass('js-vanish-animate');
   }
-}, {offset: '90%' });
+}, {offset: '90%'});
