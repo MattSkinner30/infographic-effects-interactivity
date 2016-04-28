@@ -26,6 +26,23 @@ h1, .white-p {
   color: #fdd5bc;
 }
 
+.shadow {
+  position: absolute;
+  top: 20%;
+  max-width: 1375px;
+  z-index: 1;
+}
+
+.header {
+  max-width: 1375px;
+  position: relative;
+  z-index: 1000;
+}
+
+.head-h2 {
+  margin-top: 2em;
+}
+
 .chart-grow {
   transform: scale(2);
 }
@@ -79,4 +96,26 @@ h1, .white-p {
 .test {
   width: 200%;
 }
+
+
+
+/** This is extra waypoint js
+
+$enterRight.waypoint(function (direction) {
+  if (direction == 'down') {
+    $enterRight.addClass('translate-right-brain');
+  } else {
+    $enterRight.removeClass('translate-right-brain');
+  }
+}, {offset: '90%'});
+
+$enterLeft.waypoint(function (direction) {
+  if (direction == 'down') {
+    $enterLeft.addClass('translate-left-brain');
+  } else {
+    $enterLeft.removeClass('translate-left-brain');
+  }
+}, {offset: '90%'});
+
+**/
 
