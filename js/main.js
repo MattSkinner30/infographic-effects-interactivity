@@ -13,7 +13,6 @@ var $chart2 = $('.chart2');
 var $chartHeader2 = $('.chart-header2');
 var $vanish = $('.vanish');
 
-
 $trait.on('click', function () {
   $(this).toggleClass('grow');
 });
@@ -32,7 +31,7 @@ $chartDiv2.hover(function () {
 
 $vanish.waypoint(function (direction) {
     if (direction == 'down') {
-    $vanish.addClass('js-vanish-animate');
+  $vanish.addClass('js-vanish-animate');
   } else {
     $vanish.removeClass('js-vanish-animate');
   }

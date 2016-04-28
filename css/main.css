@@ -31,6 +31,22 @@ h1, .white-p {
   top: 20%;
   max-width: 1375px;
   z-index: 1;
+  animation: shadow-animate 2s infinite;
+}
+
+@keyframes shadow-animate {
+
+  0% {
+    transform: scale(1);
+  }
+  
+  50% {
+    transform: scale(1.03);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .header {
@@ -80,10 +96,6 @@ h1, .white-p {
   }
 }
 
-/** THIS SECTION IS FOR THE ICONS **/
-
-/** default state for icons **/
-
 .trait {
   width: 7em;
   color: #344b62;
@@ -93,32 +105,8 @@ h1, .white-p {
   width: 13em;
   transition: all 200ms ease-in;
   color: #fdd5bc;
-
 }
 
 .test {
   width: 200%;
 }
-
-
-
-/** This is extra waypoint js
-
-$enterRight.waypoint(function (direction) {
-  if (direction == 'down') {
-    $enterRight.addClass('translate-right-brain');
-  } else {
-    $enterRight.removeClass('translate-right-brain');
-  }
-}, {offset: '90%'});
-
-$enterLeft.waypoint(function (direction) {
-  if (direction == 'down') {
-    $enterLeft.addClass('translate-left-brain');
-  } else {
-    $enterLeft.removeClass('translate-left-brain');
-  }
-}, {offset: '90%'});
-
-**/
-
